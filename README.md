@@ -16,14 +16,14 @@ How to skip above mentioned QA tasks?
   
 Define a profile in your ~/.m2/settings.xml:
   
-<profile>
-	<id>dev-vaadin-maven-plugin</id>
-	<activation><activeByDefault>true</activeByDefault></activation>
-	<properties>
-		<gpg.passphrase.file>/dev/null</gpg.passphrase.file>
-		<skipTests>true</skipTests>
-		<enforcer.skip>true</enforcer.skip>
-		<gpg.skip>true</gpg.skip>
-		<altDeploymentRepository>arcusys-oss-snapshots::default::https://dev-1.arcusys.fi/mvn/content/repositories/arcusys-oss-snapshots</altDeploymentRepository>
-	</properties>
-</profile>
+	<profile>
+		<id>dev-vaadin-maven-plugin</id>
+		<activation><activeByDefault>true</activeByDefault></activation>
+		<properties>
+			<gpg.passphrase.file>/dev/null</gpg.passphrase.file>
+			<skipTests>true</skipTests>
+			<enforcer.skip>true</enforcer.skip>
+			<gpg.skip>true</gpg.skip>
+			<altDeploymentRepository>arcusys-oss-snapshots::default::https://dev-1.arcusys.fi/mvn/content/repositories/arcusys-oss-snapshots</altDeploymentRepository>
+		</properties>
+	</profile>
